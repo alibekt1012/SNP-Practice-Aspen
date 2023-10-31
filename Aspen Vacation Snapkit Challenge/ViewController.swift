@@ -93,20 +93,20 @@ class ViewController: UIViewController {
         
         subTitle1.snp.makeConstraints { make in
             make.leading.equalTo(32)
-            make.top.equalTo(titleAspen.snp.bottom).offset(334)
+            make.bottom.equalTo(subTitle2.snp.top).offset(-8)
         }
         
         subTitle2.snp.makeConstraints { make in
-            make.top.equalTo(subTitle1.snp.bottom).offset(8)
             make.leading.equalTo(32)
-            make.trailing.equalTo(48)
+            make.trailing.equalTo(-48)
+            make.bottom.equalTo(exploreButton.snp.top).offset(-24)
         }
         
         exploreButton.snp.makeConstraints { make in
             make.leading.equalTo(32)
-            make.top.equalTo(subTitle2.snp.bottom).offset(24)
             make.height.equalTo(52)
             make.trailing.equalTo(-32)
+            make.bottom.equalTo(-48)
         }
     }
 
