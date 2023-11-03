@@ -63,6 +63,17 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         setupViews()
         setupConstraints()
+        exploreButton.addTarget(self, action: #selector(exploreButtonTouched), for: .touchUpInside)
+    }
+    
+    @objc func exploreButtonTouched() {
+        print("prprprp")
+        
+        let tabBarVC = TabBarController()
+        
+        tabBarVC.modalPresentationStyle = .fullScreen
+        
+        present(tabBarVC, animated: true)
     }
     
     // Setup Views

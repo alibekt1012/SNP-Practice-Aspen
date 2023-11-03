@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D8A62112AF27C9800CDA9FD /* LocationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8A62102AF27C9800CDA9FD /* LocationCollectionViewCell.swift */; };
+		1D8A62162AF4EC3D00CDA9FD /* FilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8A62152AF4EC3D00CDA9FD /* FilterCollectionViewCell.swift */; };
 		1DC7413B2AF0D317004B4C0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7413A2AF0D317004B4C0C /* AppDelegate.swift */; };
 		1DC7413D2AF0D317004B4C0C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7413C2AF0D317004B4C0C /* SceneDelegate.swift */; };
 		1DC7413F2AF0D317004B4C0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7413E2AF0D317004B4C0C /* ViewController.swift */; };
@@ -15,9 +17,15 @@
 		1DC741502AF0D37C004B4C0C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1DC7414F2AF0D37C004B4C0C /* SnapKit */; };
 		1DC741522AF0FBBA004B4C0C /* Hiatus.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DC741512AF0FBB9004B4C0C /* Hiatus.ttf */; };
 		1DC741542AF0FE53004B4C0C /* Montserrat.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1DC741532AF0FE53004B4C0C /* Montserrat.ttf */; };
+		1DC741562AF23BC9004B4C0C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC741552AF23BC9004B4C0C /* TabBarController.swift */; };
+		1DC741582AF23F67004B4C0C /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC741572AF23F67004B4C0C /* MainPageViewController.swift */; };
+		1DC7415A2AF23F8F004B4C0C /* SecondaryPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC741592AF23F8F004B4C0C /* SecondaryPageViewController.swift */; };
+		1DC7415E2AF275D2004B4C0C /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7415D2AF275D2004B4C0C /* Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D8A62102AF27C9800CDA9FD /* LocationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCollectionViewCell.swift; sourceTree = "<group>"; };
+		1D8A62152AF4EC3D00CDA9FD /* FilterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCollectionViewCell.swift; sourceTree = "<group>"; };
 		1DC741372AF0D317004B4C0C /* Aspen Vacation Snapkit Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aspen Vacation Snapkit Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DC7413A2AF0D317004B4C0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DC7413C2AF0D317004B4C0C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -27,6 +35,10 @@
 		1DC741482AF0D318004B4C0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DC741512AF0FBB9004B4C0C /* Hiatus.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Hiatus.ttf; sourceTree = "<group>"; };
 		1DC741532AF0FE53004B4C0C /* Montserrat.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Montserrat.ttf; sourceTree = "<group>"; };
+		1DC741552AF23BC9004B4C0C /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		1DC741572AF23F67004B4C0C /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		1DC741592AF23F8F004B4C0C /* SecondaryPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryPageViewController.swift; sourceTree = "<group>"; };
+		1DC7415D2AF275D2004B4C0C /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +53,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D8A62122AF4E79400CDA9FD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1DC7413E2AF0D317004B4C0C /* ViewController.swift */,
+				1DC741552AF23BC9004B4C0C /* TabBarController.swift */,
+				1DC741572AF23F67004B4C0C /* MainPageViewController.swift */,
+				1DC741592AF23F8F004B4C0C /* SecondaryPageViewController.swift */,
+				1D8A62102AF27C9800CDA9FD /* LocationCollectionViewCell.swift */,
+				1D8A62152AF4EC3D00CDA9FD /* FilterCollectionViewCell.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1D8A62132AF4E7AF00CDA9FD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1DC7415D2AF275D2004B4C0C /* Location.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1D8A62142AF4E7BF00CDA9FD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1DC741532AF0FE53004B4C0C /* Montserrat.ttf */,
+				1DC741512AF0FBB9004B4C0C /* Hiatus.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		1DC7412E2AF0D317004B4C0C = {
 			isa = PBXGroup;
 			children = (
@@ -60,11 +102,11 @@
 		1DC741392AF0D317004B4C0C /* Aspen Vacation Snapkit Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				1D8A62122AF4E79400CDA9FD /* Controllers */,
+				1D8A62132AF4E7AF00CDA9FD /* Models */,
+				1D8A62142AF4E7BF00CDA9FD /* Fonts */,
 				1DC7413A2AF0D317004B4C0C /* AppDelegate.swift */,
 				1DC7413C2AF0D317004B4C0C /* SceneDelegate.swift */,
-				1DC7413E2AF0D317004B4C0C /* ViewController.swift */,
-				1DC741532AF0FE53004B4C0C /* Montserrat.ttf */,
-				1DC741512AF0FBB9004B4C0C /* Hiatus.ttf */,
 				1DC741432AF0D318004B4C0C /* Assets.xcassets */,
 				1DC741452AF0D318004B4C0C /* LaunchScreen.storyboard */,
 				1DC741482AF0D318004B4C0C /* Info.plist */,
@@ -150,8 +192,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DC741582AF23F67004B4C0C /* MainPageViewController.swift in Sources */,
+				1D8A62162AF4EC3D00CDA9FD /* FilterCollectionViewCell.swift in Sources */,
 				1DC7413F2AF0D317004B4C0C /* ViewController.swift in Sources */,
+				1DC7415E2AF275D2004B4C0C /* Location.swift in Sources */,
+				1DC741562AF23BC9004B4C0C /* TabBarController.swift in Sources */,
 				1DC7413B2AF0D317004B4C0C /* AppDelegate.swift in Sources */,
+				1DC7415A2AF23F8F004B4C0C /* SecondaryPageViewController.swift in Sources */,
+				1D8A62112AF27C9800CDA9FD /* LocationCollectionViewCell.swift in Sources */,
 				1DC7413D2AF0D317004B4C0C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
